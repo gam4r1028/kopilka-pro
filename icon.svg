@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Копилка Pro">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#202024"/>
+      <stop offset="1" stop-color="#0A0A0B"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE96B"/>
+      <stop offset="0.55" stop-color="#FFDD2D"/>
+      <stop offset="1" stop-color="#FFB800"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFDD2D" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FFDD2D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect x="4" y="4" width="504" height="504" rx="112" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+  <circle cx="256" cy="250" r="212" fill="url(#glow)"/>
+  <ellipse cx="250" cy="320" rx="140" ry="102" fill="url(#gold)"/>
+  <path d="M150 242 L118 168 L208 204 Z" fill="#FFD22D"/>
+  <path d="M350 242 L382 168 L292 204 Z" fill="#FFC400"/>
+  <rect x="176" y="398" width="44" height="56" rx="22" fill="#E6A800"/>
+  <rect x="286" y="398" width="44" height="56" rx="22" fill="#E6A800"/>
+  <path d="M116 330 C84 316 84 356 114 362" stroke="#FFC400" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <ellipse cx="388" cy="320" rx="46" ry="54" fill="#FFE45C"/>
+  <ellipse cx="388" cy="320" rx="29" ry="33" fill="#FFD22D" opacity="0.7"/>
+  <circle cx="378" cy="306" r="7" fill="#7A5C00"/>
+  <circle cx="400" cy="332" r="7" fill="#7A5C00"/>
+  <circle cx="300" cy="288" r="13" fill="#1A1600"/>
+  <circle cx="304" cy="283" r="4" fill="#FFFFFF" opacity="0.75"/>
+  <rect x="200" y="222" width="104" height="20" rx="10" fill="#1A1600" transform="rotate(-6 252 232)"/>
+  <circle cx="252" cy="150" r="38" fill="url(#gold)" stroke="#1A1600" stroke-width="8"/>
+  <text x="252" y="165" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#1A1600">₽</text>
+</svg>

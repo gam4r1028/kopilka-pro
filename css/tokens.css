@@ -1,0 +1,141 @@
+/* Токены дизайн-системы «Копилка Pro» */
+:root {
+  color-scheme: dark;
+
+  /* Шрифт и типографика */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-28: 1.75rem;
+  --fs-40: 2.5rem;
+  --fs-56: 3.5rem;
+  --lh-tight: 1.1;
+  --lh-base: 1.45;
+
+  /* Поверхности */
+  --bg-outer: #08080A;
+  --bg: #0F0F10;
+  --bg-elev: #151517;
+  --card: #1B1B1D;
+  --card-2: #232326;
+  --card-3: #2B2B2F;
+  --line: rgba(255, 255, 255, 0.06);
+  --line-2: rgba(255, 255, 255, 0.12);
+  --text: #F5F5F7;
+  --text-2: #A1A1AA;
+  --text-3: #71717A;
+  --glass: rgba(15, 15, 16, 0.72);
+  --glass-2: rgba(24, 24, 26, 0.78);
+
+  /* Акцент по умолчанию — жёлтый */
+  --accent: #FFDD2D;
+  --accent-2: #FFC400;
+  --accent-ink: #1A1600;
+  --accent-soft: rgba(255, 221, 45, 0.14);
+
+  /* Смысловые цвета */
+  --good: #3DDC97;
+  --good-soft: rgba(61, 220, 151, 0.12);
+  --bad: #FF6B7A;
+  --bad-soft: rgba(255, 107, 122, 0.12);
+  --warn: #FFB020;
+  --warn-soft: rgba(255, 176, 32, 0.14);
+
+  /* Радиусы */
+  --r-12: 12px;
+  --r-16: 16px;
+  --r-24: 24px;
+  --r-32: 32px;
+  --r-pill: 999px;
+
+  /* Сетка отступов */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+
+  /* Движение */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-spring: cubic-bezier(0.16, 1.12, 0.3, 1);
+  --t-fast: 150ms;
+  --t-base: 220ms;
+  --t-slow: 400ms;
+
+  /* Тени */
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.18);
+  --shadow-2: 0 20px 60px rgba(0, 0, 0, 0.5);
+  --shadow-accent: 0 10px 30px var(--accent-soft);
+
+  /* Размеры */
+  --maxw: 480px;
+  --tabbar-h: calc(64px + env(safe-area-inset-bottom));
+  --header-h: 56px;
+
+  /* Градиенты карточек целей */
+  --grad-sunset: linear-gradient(135deg, #FF9A3D 0%, #FF3D68 100%);
+  --grad-ocean: linear-gradient(135deg, #2E86FF 0%, #00B8A9 100%);
+  --grad-violet: linear-gradient(135deg, #8B5CF6 0%, #D946EF 100%);
+  --grad-lime: linear-gradient(135deg, #65A30D 0%, #166534 100%);
+  --grad-rose: linear-gradient(135deg, #FB7185 0%, #BE123C 100%);
+  --grad-midnight: linear-gradient(135deg, #475569 0%, #0F172A 100%);
+  --grad-gold: linear-gradient(135deg, #F59E0B 0%, #92400E 100%);
+  --grad-sky: linear-gradient(135deg, #38BDF8 0%, #4F46E5 100%);
+
+  /* Слои */
+  --z-tabbar: 40;
+  --z-overlay: 60;
+  --z-snackbar: 70;
+  --z-onboarding: 80;
+}
+
+/* Светлая тема */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-outer: #E6E6EC;
+  --bg: #F4F4F6;
+  --bg-elev: #EDEDF1;
+  --card: #FFFFFF;
+  --card-2: #F3F3F7;
+  --card-3: #E9E9EF;
+  --line: rgba(15, 15, 20, 0.07);
+  --line-2: rgba(15, 15, 20, 0.14);
+  --text: #111114;
+  --text-2: #5F5F68;
+  --text-3: #8A8A94;
+  --glass: rgba(244, 244, 246, 0.78);
+  --glass-2: rgba(255, 255, 255, 0.8);
+  --good: #12A66A;
+  --good-soft: rgba(18, 166, 106, 0.12);
+  --bad: #E5484D;
+  --bad-soft: rgba(229, 72, 77, 0.1);
+  --shadow-1: 0 1px 2px rgba(20, 20, 40, 0.04), 0 10px 28px rgba(20, 20, 40, 0.08);
+  --shadow-2: 0 24px 60px rgba(20, 20, 40, 0.18);
+}
+
+/* AMOLED-тема */
+[data-theme="amoled"] {
+  color-scheme: dark;
+  --bg-outer: #000000;
+  --bg: #000000;
+  --bg-elev: #050506;
+  --card: #0B0B0C;
+  --card-2: #141416;
+  --card-3: #1D1D20;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-2: rgba(255, 255, 255, 0.16);
+  --glass: rgba(0, 0, 0, 0.76);
+  --glass-2: rgba(8, 8, 9, 0.82);
+}
+
+/* Акценты */
+[data-accent="yellow"] { --accent: #FFDD2D; --accent-2: #FFC400; --accent-ink: #1A1600; --accent-soft: rgba(255, 221, 45, 0.14); }
+[data-accent="blue"]   { --accent: #5B8CFF; --accent-2: #3D6DFF; --accent-ink: #06122E; --accent-soft: rgba(91, 140, 255, 0.16); }
+[data-accent="green"]  { --accent: #3DDC97; --accent-2: #1FBF7A; --accent-ink: #06251A; --accent-soft: rgba(61, 220, 151, 0.14); }
+[data-accent="purple"] { --accent: #A78BFA; --accent-2: #8B5CF6; --accent-ink: #1A1030; --accent-soft: rgba(167, 139, 250, 0.16); }
+[data-accent="pink"]   { --accent: #FF6FAE; --accent-2: #FF4D95; --accent-ink: #2A0616; --accent-soft: rgba(255, 111, 174, 0.16); }
+[data-accent="orange"] { --accent: #FF9F43; --accent-2: #FF7A1A; --accent-ink: #2A1300; --accent-soft: rgba(255, 159, 67, 0.16); }

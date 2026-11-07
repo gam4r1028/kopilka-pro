@@ -1,0 +1,42 @@
+{
+  "name": "Копилка Pro",
+  "short_name": "Копилка",
+  "description": "Премиальное приложение для накоплений на цели: цели, операции, аналитика и офлайн-режим.",
+  "lang": "ru",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F0F10",
+  "theme_color": "#0F0F10",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Пополнить цель",
+      "short_name": "Пополнить",
+      "url": "./index.html#/home",
+      "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "История",
+      "short_name": "История",
+      "url": "./index.html#/history",
+      "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}
